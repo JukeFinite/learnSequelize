@@ -1,6 +1,11 @@
 const router = require('express').Router();
 const bcrypt = require('bcryptjs');
-const User = require('../../../models/User');
+// const User = require('../../../models/User');
+// const Todo = require('../../../models/Todo');
+const {
+	User,
+	Todo
+} =  require('../../../models');
 // Create user   /api/users
 router.post('/', async (req, res) => {
 	const {
